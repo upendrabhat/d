@@ -1,0 +1,22 @@
+<h1 style="text-align: center;">domino</h1><hr/>
+<div>
+    <table>
+        <tr>
+            <td *ngFor="let d of appservice.dominoes; let i = index" style="text-align: center;">
+                <button (click)="changeDomino(i)">
+                    <img *ngIf="d == 'L'" height="100px" width="80px" src="/asset/dominoleft.png">
+                    <img *ngIf="d == '.'" height="100px" width="80px" src="/asset/dominostraight.png">
+                    <img *ngIf="d == 'R'" height="100px" width="80px" src="/asset/dominoright.png">
+                </button>
+            </td>
+        </tr>        
+    </table><br/>
+    <table style="width: 100%; text-align: center;">
+        <tr>
+            <td><button  (click)="simulate()">simulate domino fall</button></td>
+            <td><button  (click)="reset()">reset</button></td>
+        </tr>
+    </table>
+</div>
+<audio id="dominoaudio" src="/asset/dominoaudio.mp3" hidden></audio>
+<audio id="dominoreset" src="/asset/dominoreset.mp3" hidden></audio>

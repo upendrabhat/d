@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+button {
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 2em;
+    margin-bottom: 20px;
+    background-color: blueviolet;
+}
+
+table {
+    background-color: azure;
+    color: black
+}
+
